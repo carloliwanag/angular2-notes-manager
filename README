@@ -1,0 +1,16 @@
+Installation:
+
+run npm install
+
+Test:
+
+1) To test express, run mocha.
+2) To test angular 2 app, run npm test
+
+
+Running the app:
+1) Use either forever or nodemon to run express endpoints
+    nodemon server\index.js
+
+2) To run Angular 2 app,
+    npm start
