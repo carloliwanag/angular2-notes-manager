@@ -1,0 +1,15 @@
+<div class="container">
+    <h4 class="text-center">Create a Note</h4>
+    <form #noteForm="ngForm" class="well">
+        <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" class="form-control" required placeholder="Note Subject" [(ngModel)]="note.subject" />
+        </div>
+        <div class="form-group">
+            <label for="body">Description</label>
+            <textarea id="body" name="body" class="form-control vert" required placeholder="Description of your note." [(ngModel)]="note.body" maxlength="150"></textarea>
+        </div>
+        <button class="btn btn-lg btn-success" [disabled]="!noteForm.form.valid" (click)="submitRequest(note)">Submit</button>
+        <button class="btn btn-lg btn-danger" (click)="goBack()">Cancel</button>
+    </form>
+</div>
